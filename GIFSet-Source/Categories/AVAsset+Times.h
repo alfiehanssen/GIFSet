@@ -31,6 +31,6 @@
 
 - (NSArray <NSValue *>*)timesWithCount:(NSInteger)count;
 
-- (NSArray <NSValue *>*)timesWithInterval:(NSTimeInterval)interval;
+- (NSArray <NSValue *>*)timesAtInterval:(NSTimeInterval)interval;
 
 @end

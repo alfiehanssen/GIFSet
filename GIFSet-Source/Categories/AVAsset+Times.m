@@ -42,10 +42,10 @@ static const NSTimeInterval TimeTolerance = 0.01;
     Float64 duration = CMTimeGetSeconds(self.duration);
     Float64 interval = duration / count;
     
-    return [self timesWithInterval:interval];
+    return [self timesAtInterval:interval];
 }
 
-- (NSArray <NSValue *>*)timesWithInterval:(NSTimeInterval)interval
+- (NSArray <NSValue *>*)timesAtInterval:(NSTimeInterval)interval
 {
     if (interval <= 0)
     {
