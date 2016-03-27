@@ -1,0 +1,10 @@
+PODS:
+  - VIMVideoPlayer (6.0.0)
+
+DEPENDENCIES:
+  - VIMVideoPlayer (= 6.0.0)
+
+SPEC CHECKSUMS:
+  VIMVideoPlayer: e132b14b91e79267803b734f933f6138702afa0b
+
+COCOAPODS: 0.39.0
