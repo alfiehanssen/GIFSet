@@ -37,4 +37,4 @@ Tweet at me here: [@alfiehanssen](https://twitter.com/alfiehanssen).
 
 The video used in the example app was shot by @ghking
 
-[[https://49.media.tumblr.com/2c5825a52d6461d307c5dd6a70a57721/tumblr_n6ugpi4nKy1tdjtr0o1_400.gif]]
+![alt tag](https://49.media.tumblr.com/2c5825a52d6461d307c5dd6a70a57721/tumblr_n6ugpi4nKy1tdjtr0o1_400.gif)
