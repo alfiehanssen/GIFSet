@@ -52,7 +52,6 @@ class GIFViewController: UIViewController
     {
         let request = NSURLRequest(URL: self.URL)
         self.webView.loadRequest(request)
-        self.webView.scalesPageToFit = true
     }
     
     // MARK: Actions

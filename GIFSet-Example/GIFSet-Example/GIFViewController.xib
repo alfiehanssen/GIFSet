@@ -52,9 +52,10 @@
                         <constraint firstAttribute="bottom" secondItem="Lrf-Fv-Fwy" secondAttribute="bottom" constant="15" id="z62-Jq-cjE"/>
                     </constraints>
                 </view>
-                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyR-lL-Nhc">
+                <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyR-lL-Nhc">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="467"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <dataDetectorType key="dataDetectorTypes"/>
                 </webView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
