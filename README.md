@@ -1,10 +1,25 @@
 # GIFSet
 
+GIFSet is a simple toolset for creating GIFs and GIF-like videos. 
+
+## Setup
+
 TBD
+
+## Usage
+
+TBD
+
+## TODO
+
+- Determine if we can create a GIF-like video by reading and writing the asset concurrently. Instead of extracting images.
+- Set up a Cocoapod
+- Integrate GIFs into the example app
+- Test videos of various orientations, resolutions
 
 ## Want to Contribute?
 
-If you'd like to contribute, please follow our guidelines found in [CONTRIBUTING](CONTRIBUTING.md).
+If you'd like to contribute, please follow the guidelines found in [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Found an Issue?
 
@@ -17,3 +32,7 @@ Tweet at me here: [@alfiehanssen](https://twitter.com/alfiehanssen).
 ## License
 
 `GIFSet` is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+
+## Credits
+
+The video used in the example app was shot by @ghking
