@@ -1,8 +1,8 @@
 //
-//  GIFSet.h
-//  GIFSet
+//  DismissableViewController.swift
+//  GIFSet-Example
 //
-//  Created by Alfred Hanssen on 3/23/16.
+//  Created by Alfred Hanssen on 3/27/16.
 //  Copyright © 2016 Alfie Hanssen. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,22 +24,10 @@
 //  THE SOFTWARE.
 //
 
-@import Foundation;
+import Foundation
+import UIKit
 
-//! Project version number for GIFSet.
-FOUNDATION_EXPORT double GIFSetVersionNumber;
-
-//! Project version string for GIFSet.
-FOUNDATION_EXPORT const unsigned char GIFSetVersionString[];
-
-#import <GIFSet/ConcurrentOperation.h>
-#import <GIFSet/CompositionOperation.h>
-#import <GIFSet/ImageExtractionOperation.h>
-#import <GIFSet/ImageConcatenationOperation.h>
-#import <GIFSet/VideoGIFFromVideoOperation.h>
-#import <GIFSet/GIFOperation.h>
-#import <GIFSet/GIFFromVideoOperation.h>
-
-#import <GIFSet/AVAsset+Times.h>
-#import <GIFSet/NSURL+Extensions.h>
-#import <GIFSet/NSFileManager+Extensions.h>
+protocol Dismissable: class
+{
+    func requestDismissal(viewController viewController: UIViewController, animated: Bool)
+}

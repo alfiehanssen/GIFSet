@@ -48,12 +48,6 @@
 
 @implementation GIFOperation
 
-- (void)dealloc
-{
-    CFRelease(_destination);
-    _destination = nil;
-}
-
 - (instancetype _Nullable)initWithImageURLs:(NSArray <NSURL *>* _Nonnull)imageURLs
                               frameDuration:(NSTimeInterval)frameDuration
                                   outputURL:(NSURL * _Nonnull)outputURL
@@ -89,10 +83,15 @@
     
     NSString *path = [self.outputURL path];
     [[NSFileManager defaultManager] removeFileAtPathIfPossible:path];
+    
+    CFRelease(_destination);
+    _destination = nil;
 }
 
 - (void)main
 {
+    CGSize firstImageSize = CGSizeZero;
+    
     for (NSURL *URL in self.imageURLs)
     {
         // TODO: wrap in autorelease pool?
@@ -104,7 +103,12 @@
         
         UIImage *image = [UIImage imageWithContentsOfFile:[URL absoluteString]];
         
-        NSDictionary *gifProperties = @{(__bridge id)kCGImagePropertyGIFDelayTime: [NSNumber numberWithFloat:self.frameDuration]};
+        if (CGSizeEqualToSize(CGSizeZero, firstImageSize))
+        {
+            firstImageSize = image.size;
+        }
+        
+        NSDictionary *gifProperties = @{(__bridge id)kCGImagePropertyGIFDelayTime: @(self.frameDuration)};
         NSDictionary *frameProperties = @{(__bridge id)kCGImagePropertyGIFDictionary: gifProperties};
         
         // TODO: wrap in autorelease pool?
@@ -113,8 +117,8 @@
     
     NSDictionary *gifProperties = @{(__bridge id)kCGImagePropertyGIFLoopCount : @0}; // 0 == loop forever
     
-    NSDictionary *fileProperties = @{(__bridge id)kCGImagePropertyPixelWidth: @450, // TODO: update these values
-                                     (__bridge id)kCGImagePropertyPixelHeight: @254,
+    NSDictionary *fileProperties = @{(__bridge id)kCGImagePropertyPixelWidth: @(firstImageSize.width),
+                                     (__bridge id)kCGImagePropertyPixelHeight: @(firstImageSize.height),
                                      (__bridge id)kCGImagePropertyGIFDictionary: gifProperties};
     
     CGImageDestinationSetProperties(_destination, (__bridge CFDictionaryRef)fileProperties);
@@ -125,6 +129,11 @@
         [[NSFileManager defaultManager] removeFileAtPathIfPossible:path];
 
         self.error = [NSError errorWithDomain:@"GIFCreatorErrorDomain" code:0 userInfo:@{NSLocalizedDescriptionKey: @"Unable to finalize GIF image."}];
+    }
+    
+    if ([self isCancelled])
+    {
+        return;
     }
     
     CFRelease(_destination);

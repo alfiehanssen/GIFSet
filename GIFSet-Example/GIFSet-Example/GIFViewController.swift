@@ -1,8 +1,8 @@
 //
-//  GIFSet.h
-//  GIFSet
+//  GIFViewController.swift
+//  GIFSet-Example
 //
-//  Created by Alfred Hanssen on 3/23/16.
+//  Created by Alfred Hanssen on 3/27/16.
 //  Copyright © 2016 Alfie Hanssen. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,22 +24,46 @@
 //  THE SOFTWARE.
 //
 
-@import Foundation;
+import UIKit
 
-//! Project version number for GIFSet.
-FOUNDATION_EXPORT double GIFSetVersionNumber;
+// TODO: Figure out why GIF is scaling weird in webview
 
-//! Project version string for GIFSet.
-FOUNDATION_EXPORT const unsigned char GIFSetVersionString[];
+class GIFViewController: UIViewController
+{
+    var URL: NSURL!
+    weak var delegate: Dismissable?
 
-#import <GIFSet/ConcurrentOperation.h>
-#import <GIFSet/CompositionOperation.h>
-#import <GIFSet/ImageExtractionOperation.h>
-#import <GIFSet/ImageConcatenationOperation.h>
-#import <GIFSet/VideoGIFFromVideoOperation.h>
-#import <GIFSet/GIFOperation.h>
-#import <GIFSet/GIFFromVideoOperation.h>
+    // MARK: IBOUtlets
+    
+    @IBOutlet weak var webView: UIWebView!
+    
+    // MARK: View Lifecycle
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
 
-#import <GIFSet/AVAsset+Times.h>
-#import <GIFSet/NSURL+Extensions.h>
-#import <GIFSet/NSFileManager+Extensions.h>
+        self.setupWebView()
+    }
+    
+    // MARK: Setup
+    
+    private func setupWebView()
+    {
+        let request = NSURLRequest(URL: self.URL)
+        self.webView.loadRequest(request)
+        self.webView.scalesPageToFit = true
+    }
+    
+    // MARK: Actions
+    
+    @IBAction func didTapShare(sender: UIButton)
+    {
+        // TODO: implement share
+    }
+    
+    @IBAction func didTapDismiss(sender: UIButton)
+    {
+        self.delegate?.requestDismissal(viewController: self, animated: true)
+    }
+}

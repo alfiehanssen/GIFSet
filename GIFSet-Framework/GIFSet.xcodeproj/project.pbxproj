@@ -25,10 +25,12 @@
 		AF87206A1CA45879004C752C /* CompositionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720681CA45879004C752C /* CompositionOperation.m */; };
 		AF87206D1CA57A81004C752C /* AVAsset+Times.h in Headers */ = {isa = PBXBuildFile; fileRef = AF87206B1CA57A81004C752C /* AVAsset+Times.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF87206E1CA57A81004C752C /* AVAsset+Times.m in Sources */ = {isa = PBXBuildFile; fileRef = AF87206C1CA57A81004C752C /* AVAsset+Times.m */; };
-		AF8720731CA6C17D004C752C /* VideoGIFOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8720711CA6C17D004C752C /* VideoGIFOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF8720741CA6C17D004C752C /* VideoGIFOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720721CA6C17D004C752C /* VideoGIFOperation.m */; };
+		AF8720731CA6C17D004C752C /* VideoGIFFromVideoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8720711CA6C17D004C752C /* VideoGIFFromVideoOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF8720741CA6C17D004C752C /* VideoGIFFromVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720721CA6C17D004C752C /* VideoGIFFromVideoOperation.m */; };
 		AF8720791CA78515004C752C /* NSFileManager+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8720771CA78515004C752C /* NSFileManager+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF87207A1CA78515004C752C /* NSFileManager+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720781CA78515004C752C /* NSFileManager+Extensions.m */; };
+		AF8720871CA850E7004C752C /* GIFFromVideoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8720851CA850E7004C752C /* GIFFromVideoOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF8720881CA850E7004C752C /* GIFFromVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720861CA850E7004C752C /* GIFFromVideoOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +65,12 @@
 		AF8720681CA45879004C752C /* CompositionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositionOperation.m; sourceTree = "<group>"; };
 		AF87206B1CA57A81004C752C /* AVAsset+Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAsset+Times.h"; sourceTree = "<group>"; };
 		AF87206C1CA57A81004C752C /* AVAsset+Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAsset+Times.m"; sourceTree = "<group>"; };
-		AF8720711CA6C17D004C752C /* VideoGIFOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoGIFOperation.h; sourceTree = "<group>"; };
-		AF8720721CA6C17D004C752C /* VideoGIFOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoGIFOperation.m; sourceTree = "<group>"; };
+		AF8720711CA6C17D004C752C /* VideoGIFFromVideoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoGIFFromVideoOperation.h; sourceTree = "<group>"; };
+		AF8720721CA6C17D004C752C /* VideoGIFFromVideoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoGIFFromVideoOperation.m; sourceTree = "<group>"; };
 		AF8720771CA78515004C752C /* NSFileManager+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extensions.h"; sourceTree = "<group>"; };
 		AF8720781CA78515004C752C /* NSFileManager+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extensions.m"; sourceTree = "<group>"; };
+		AF8720851CA850E7004C752C /* GIFFromVideoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFromVideoOperation.h; sourceTree = "<group>"; };
+		AF8720861CA850E7004C752C /* GIFFromVideoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFFromVideoOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +161,10 @@
 				AF871F5C1CA2F4F8004C752C /* ImageExtractionOperation.m */,
 				AF871F591CA2F4F8004C752C /* ImageConcatenationOperation.h */,
 				AF871F5A1CA2F4F8004C752C /* ImageConcatenationOperation.m */,
-				AF8720711CA6C17D004C752C /* VideoGIFOperation.h */,
-				AF8720721CA6C17D004C752C /* VideoGIFOperation.m */,
+				AF8720711CA6C17D004C752C /* VideoGIFFromVideoOperation.h */,
+				AF8720721CA6C17D004C752C /* VideoGIFFromVideoOperation.m */,
+				AF8720851CA850E7004C752C /* GIFFromVideoOperation.h */,
+				AF8720861CA850E7004C752C /* GIFFromVideoOperation.m */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 				AF871F781CA43226004C752C /* NSURL+Extensions.h in Headers */,
 				AF8720791CA78515004C752C /* NSFileManager+Extensions.h in Headers */,
 				AF8720691CA45879004C752C /* CompositionOperation.h in Headers */,
+				AF8720871CA850E7004C752C /* GIFFromVideoOperation.h in Headers */,
 				AF871F721CA2F4F8004C752C /* ImageExtractionOperation.h in Headers */,
 				AF871F691CA2F4F8004C752C /* BlockTypes.h in Headers */,
 				AF871F281CA2F443004C752C /* GIFSet.h in Headers */,
@@ -193,7 +200,7 @@
 				AF871F6C1CA2F4F8004C752C /* ConcurrentOperation.h in Headers */,
 				AF871F701CA2F4F8004C752C /* ImageConcatenationOperation.h in Headers */,
 				AF87206D1CA57A81004C752C /* AVAsset+Times.h in Headers */,
-				AF8720731CA6C17D004C752C /* VideoGIFOperation.h in Headers */,
+				AF8720731CA6C17D004C752C /* VideoGIFFromVideoOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +305,10 @@
 				AF871F711CA2F4F8004C752C /* ImageConcatenationOperation.m in Sources */,
 				AF87207A1CA78515004C752C /* NSFileManager+Extensions.m in Sources */,
 				AF871F6D1CA2F4F8004C752C /* ConcurrentOperation.m in Sources */,
-				AF8720741CA6C17D004C752C /* VideoGIFOperation.m in Sources */,
+				AF8720741CA6C17D004C752C /* VideoGIFFromVideoOperation.m in Sources */,
 				AF87206E1CA57A81004C752C /* AVAsset+Times.m in Sources */,
 				AF871F6F1CA2F4F8004C752C /* GIFOperation.m in Sources */,
+				AF8720881CA850E7004C752C /* GIFFromVideoOperation.m in Sources */,
 				AF871F731CA2F4F8004C752C /* ImageExtractionOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

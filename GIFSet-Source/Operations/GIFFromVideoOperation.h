@@ -1,8 +1,8 @@
 //
-//  VideoGIFOperation.h
+//  GIFFromVideoOperation.h
 //  GIFSet
 //
-//  Created by Alfred Hanssen on 3/26/16.
+//  Created by Alfred Hanssen on 3/27/16.
 //  Copyright © 2016 Alfie Hanssen. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,7 +30,7 @@
 @import Foundation;
 @import AVFoundation;
 
-@interface VideoGIFOperation : ConcurrentOperation
+@interface GIFFromVideoOperation : ConcurrentOperation
 
 @property (nonatomic, copy) ProgressBlock _Nullable progressBlock;
 

@@ -1,8 +1,8 @@
 //
-//  GIFSet.h
+//  VideoGIFFromVideoOperation.h
 //  GIFSet
 //
-//  Created by Alfred Hanssen on 3/23/16.
+//  Created by Alfred Hanssen on 3/26/16.
 //  Copyright © 2016 Alfie Hanssen. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,22 +24,22 @@
 //  THE SOFTWARE.
 //
 
+#import "ConcurrentOperation.h"
+#import "BlockTypes.h"
+
 @import Foundation;
+@import AVFoundation;
 
-//! Project version number for GIFSet.
-FOUNDATION_EXPORT double GIFSetVersionNumber;
+@interface VideoGIFFromVideoOperation : ConcurrentOperation
 
-//! Project version string for GIFSet.
-FOUNDATION_EXPORT const unsigned char GIFSetVersionString[];
+@property (nonatomic, copy) ProgressBlock _Nullable progressBlock;
 
-#import <GIFSet/ConcurrentOperation.h>
-#import <GIFSet/CompositionOperation.h>
-#import <GIFSet/ImageExtractionOperation.h>
-#import <GIFSet/ImageConcatenationOperation.h>
-#import <GIFSet/VideoGIFFromVideoOperation.h>
-#import <GIFSet/GIFOperation.h>
-#import <GIFSet/GIFFromVideoOperation.h>
+@property (nonatomic, copy, readonly) NSURL * _Nullable outputURL;
+@property (nonatomic, strong, readonly) NSError * _Nullable error;
 
-#import <GIFSet/AVAsset+Times.h>
-#import <GIFSet/NSURL+Extensions.h>
-#import <GIFSet/NSFileManager+Extensions.h>
+- (instancetype _Nullable)initWithNumberOfImages:(NSInteger)numberOfImages
+                               durationInSeconds:(NSTimeInterval)durationInSeconds
+                                           asset:(AVAsset * _Nonnull)asset
+                                       outputURL:(NSURL * _Nonnull)outputURL NS_DESIGNATED_INITIALIZER;
+
+@end

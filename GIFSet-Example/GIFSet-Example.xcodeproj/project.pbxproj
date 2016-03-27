@@ -16,6 +16,11 @@
 		AF871EC01CA2F078004C752C /* GIFSet_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF871EBF1CA2F078004C752C /* GIFSet_ExampleUITests.swift */; };
 		AF871F411CA2F4A0004C752C /* GIFSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF871F401CA2F4A0004C752C /* GIFSet.framework */; };
 		AF8720651CA4545C004C752C /* Waterfall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF8720641CA4545C004C752C /* Waterfall.mp4 */; };
+		AF87207D1CA84704004C752C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF87207B1CA84704004C752C /* VideoViewController.swift */; };
+		AF87207E1CA84704004C752C /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF87207C1CA84704004C752C /* VideoViewController.xib */; };
+		AF8720801CA84AAC004C752C /* Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF87207F1CA84AAC004C752C /* Dismissable.swift */; };
+		AF8720831CA84C90004C752C /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8720811CA84C90004C752C /* GIFViewController.swift */; };
+		AF8720841CA84C90004C752C /* GIFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8720821CA84C90004C752C /* GIFViewController.xib */; };
 		B7AFEAFF64EAE8C3CA80FAB0 /* Pods_GIFSet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546AC74BBADDFA60091C91E9 /* Pods_GIFSet_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,11 @@
 		AF871F401CA2F4A0004C752C /* GIFSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GIFSet.framework; path = "../GIFSet-Framework/build/Debug-iphoneos/GIFSet.framework"; sourceTree = "<group>"; };
 		AF871F741CA42FE1004C752C /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		AF8720641CA4545C004C752C /* Waterfall.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Waterfall.mp4; sourceTree = "<group>"; };
+		AF87207B1CA84704004C752C /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		AF87207C1CA84704004C752C /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		AF87207F1CA84AAC004C752C /* Dismissable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dismissable.swift; sourceTree = "<group>"; };
+		AF8720811CA84C90004C752C /* GIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
+		AF8720821CA84C90004C752C /* GIFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIFViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,11 @@
 				AF871E9F1CA2F078004C752C /* AppDelegate.swift */,
 				AF871EA11CA2F078004C752C /* ViewController.swift */,
 				AF871EA31CA2F078004C752C /* Main.storyboard */,
+				AF87207B1CA84704004C752C /* VideoViewController.swift */,
+				AF87207C1CA84704004C752C /* VideoViewController.xib */,
+				AF8720811CA84C90004C752C /* GIFViewController.swift */,
+				AF8720821CA84C90004C752C /* GIFViewController.xib */,
+				AF87207F1CA84AAC004C752C /* Dismissable.swift */,
 				AF871EA61CA2F078004C752C /* Assets.xcassets */,
 				AF871EA81CA2F078004C752C /* LaunchScreen.storyboard */,
 				AF871EAB1CA2F078004C752C /* Info.plist */,
@@ -268,6 +283,8 @@
 				AF871EAA1CA2F078004C752C /* LaunchScreen.storyboard in Resources */,
 				AF871EA71CA2F078004C752C /* Assets.xcassets in Resources */,
 				AF8720651CA4545C004C752C /* Waterfall.mp4 in Resources */,
+				AF8720841CA84C90004C752C /* GIFViewController.xib in Resources */,
+				AF87207E1CA84704004C752C /* VideoViewController.xib in Resources */,
 				AF871EA51CA2F078004C752C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,8 +358,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8720831CA84C90004C752C /* GIFViewController.swift in Sources */,
 				AF871EA21CA2F078004C752C /* ViewController.swift in Sources */,
+				AF8720801CA84AAC004C752C /* Dismissable.swift in Sources */,
 				AF871EA01CA2F078004C752C /* AppDelegate.swift in Sources */,
+				AF87207D1CA84704004C752C /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  VideoGIFOperation.m
+//  VideoGIFFromVideoOperation.m
 //  GIFSet
 //
 //  Created by Alfred Hanssen on 3/26/16.
@@ -24,13 +24,13 @@
 //  THE SOFTWARE.
 //
 
-#import "VideoGIFOperation.h"
+#import "VideoGIFFromVideoOperation.h"
 #import "CompositionOperation.h"
 #import "ImageExtractionOperation.h"
 #import "ImageConcatenationOperation.h"
 #import "AVAsset+Times.h"
 
-@interface VideoGIFOperation ()
+@interface VideoGIFFromVideoOperation ()
 
 @property (nonatomic, assign) NSInteger numberOfImages;
 @property (nonatomic, assign) NSTimeInterval durationInSeconds;
@@ -43,7 +43,7 @@
 
 @end
 
-@implementation VideoGIFOperation
+@implementation VideoGIFFromVideoOperation
 
 - (instancetype)initWithNumberOfImages:(NSInteger)numberOfImages
                      durationInSeconds:(NSTimeInterval)durationInSeconds

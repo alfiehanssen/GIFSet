@@ -28,15 +28,13 @@ import UIKit
 import VIMVideoPlayer
 import GIFSet
 
-class ViewController: UIViewController, VIMVideoPlayerViewDelegate
+class ViewController: UIViewController, VIMVideoPlayerViewDelegate, Dismissable
 {
-    let originalURLAsset = AVURLAsset(URL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Waterfall", ofType: "mp4")!))
-    var transformedURLAsset: AVURLAsset?
+    let asset = AVURLAsset(URL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Waterfall", ofType: "mp4")!))
     
     // MARK: IBOutlets
     
     @IBOutlet weak var videoPlayerView: VIMVideoPlayerView!
-    @IBOutlet weak var actionsContainer: UIView!
     @IBOutlet weak var numberOfImagesSlider: UISlider!
     @IBOutlet weak var durationInSecondsSlider: UISlider!
     @IBOutlet weak var durationInSecondsLabel: UILabel!
@@ -69,16 +67,6 @@ class ViewController: UIViewController, VIMVideoPlayerViewDelegate
         self.setupSliders()
         self.setupVideoPlayerView()
     }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        
-        if self.isViewLoaded()
-        {
-            self.videoPlayerView.player.setAsset(self.originalURLAsset)
-        }
-    }
     
     // MARK: Setup
     
@@ -88,7 +76,7 @@ class ViewController: UIViewController, VIMVideoPlayerViewDelegate
         self.videoPlayerView.player.disableAirplay()
         self.videoPlayerView.setVideoFillMode(AVLayerVideoGravityResizeAspect)
         self.videoPlayerView.delegate = self
-        self.videoPlayerView.player.setAsset(self.originalURLAsset)
+        self.videoPlayerView.player.setAsset(self.asset)
     }
     
     private func setupSliders()
@@ -108,6 +96,15 @@ class ViewController: UIViewController, VIMVideoPlayerViewDelegate
     {
         self.videoPlayerView.player.play()
     }
+    
+    // MARK: Dismissable
+    
+    func requestDismissal(viewController viewController: UIViewController, animated: Bool)
+    {
+        viewController.dismissViewControllerAnimated(animated) { () -> Void in
+            self.videoPlayerView.player.play()
+        }
+    }
 
     // MARK: Actions
 
@@ -126,31 +123,26 @@ class ViewController: UIViewController, VIMVideoPlayerViewDelegate
         self.durationInSecondsLabel.text = duration
     }
 
-    @IBAction func didTapTransform(sender: UIButton)
+    @IBAction func didTapMakeVideo(sender: UIButton)
     {
-        self.transform(self.numberOfImages, durationInSeconds: self.durationInSeconds, asset: self.originalURLAsset)
+        self.makeVideo(numberOfImages: self.numberOfImages, durationInSeconds: self.durationInSeconds, asset: self.asset)
     }
 
-    @IBAction func didTapSave(sender: UIButton)
+    @IBAction func didTapMakeGIF(sender: UIButton)
     {
-        
+        self.makeGIF(numberOfImages: self.numberOfImages, durationInSeconds: self.durationInSeconds, asset: self.asset)
     }
 
-    @IBAction func didTapReset(sender: UIButton)
-    {
-        self.setupSliders()
-        
-        self.videoPlayerView.player.setAsset(self.originalURLAsset)
-    }
-    
     // MARK: Private API
     
-    private func transform(numberOfImages: Int, durationInSeconds: NSTimeInterval, asset: AVAsset)
+    private func makeVideo(numberOfImages numberOfImages: Int, durationInSeconds: NSTimeInterval, asset: AVAsset)
     {
+        self.videoPlayerView.player.pause()
+
         self.view.userInteractionEnabled = false
         
         let outputURL = NSURL.uniqueMp4URL()
-        let operation = VideoGIFOperation(numberOfImages:numberOfImages, durationInSeconds:durationInSeconds, asset:asset, outputURL:outputURL)
+        let operation = VideoGIFFromVideoOperation(numberOfImages:numberOfImages, durationInSeconds:durationInSeconds, asset:asset, outputURL:outputURL)
         
         operation?.progressBlock = { (progress) -> Void in
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -160,17 +152,55 @@ class ViewController: UIViewController, VIMVideoPlayerViewDelegate
         
         operation?.completionBlock = {
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.view.userInteractionEnabled = true
+
                 if let error = operation?.error
                 {
                     print(error.localizedDescription)
                 }
                 else 
                 {
-                    self.transformedURLAsset = AVURLAsset(URL: outputURL)
-                    self.videoPlayerView.player.setAsset(self.transformedURLAsset)
+                    let viewController = VideoViewController()
+                    viewController.asset = AVURLAsset(URL: outputURL)
+                    viewController.delegate = self
+                    self.presentViewController(viewController, animated: true, completion: nil)
                 }
-
+            })
+        }
+        
+        operation?.start()
+    }
+    
+    private func makeGIF(numberOfImages numberOfImages: Int, durationInSeconds: NSTimeInterval, asset: AVAsset)
+    {
+        self.videoPlayerView.player.pause()
+        
+        self.view.userInteractionEnabled = false
+        
+        let outputURL = NSURL.uniqueGIFURL()
+        let operation = GIFFromVideoOperation(numberOfImages:numberOfImages, durationInSeconds:durationInSeconds, asset:asset, outputURL:outputURL)
+        
+        operation?.progressBlock = { (progress) -> Void in
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                print("Progress: \(progress)")
+            })
+        }
+        
+        operation?.completionBlock = {
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.view.userInteractionEnabled = true
+                
+                if let error = operation?.error
+                {
+                    print(error.localizedDescription)
+                }
+                else
+                {
+                    let viewController = GIFViewController()
+                    viewController.URL = outputURL
+                    viewController.delegate = self
+                    self.presentViewController(viewController, animated: true, completion: nil)
+                }
             })
         }
         

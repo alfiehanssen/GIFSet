@@ -17,43 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jd-fy-xas" userLabel="Video Player View" customClass="VIMVideoPlayerView">
-                                <rect key="frame" x="0.0" y="20" width="320" height="143"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="261"/>
                                 <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="HsO-tp-3bP" userLabel="Actions Container">
-                                <rect key="frame" x="0.0" y="163" width="320" height="317"/>
+                                <rect key="frame" x="0.0" y="281" width="320" height="199"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqq-aO-Slz">
-                                        <rect key="frame" x="15" y="140" width="290" height="44"/>
+                                        <rect key="frame" x="15" y="140" width="138" height="44"/>
                                         <color key="backgroundColor" red="0.98431372549999996" green="0.85490196080000003" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="XkY-EQ-fOx"/>
                                         </constraints>
-                                        <state key="normal" title="Transform"/>
+                                        <state key="normal" title="Make Video"/>
                                         <connections>
-                                            <action selector="didTapTransform:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gef-Ny-sjD"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-Hy-DR3">
-                                        <rect key="frame" x="15" y="199" width="290" height="44"/>
-                                        <color key="backgroundColor" red="0.98431372549999996" green="0.85490196080000003" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="hOY-4V-uHL"/>
-                                        </constraints>
-                                        <state key="normal" title="Save"/>
-                                        <connections>
-                                            <action selector="didTapSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44H-fL-GMk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvr-xm-eGS">
-                                        <rect key="frame" x="15" y="258" width="290" height="44"/>
-                                        <color key="backgroundColor" red="0.98431372549999996" green="0.85490196080000003" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="JPn-u6-gNk"/>
-                                        </constraints>
-                                        <state key="normal" title="Reset"/>
-                                        <connections>
-                                            <action selector="didTapReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="We0-mh-FE1"/>
+                                            <action selector="didTapMakeVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvL-PY-LF4"/>
                                         </connections>
                                     </button>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="2" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="YA3-ZJ-VKY">
@@ -98,35 +76,44 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQX-cG-VTV">
+                                        <rect key="frame" x="168" y="140" width="137" height="44"/>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.85490196080000003" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="W3j-xs-9Ko"/>
+                                        </constraints>
+                                        <state key="normal" title="Make GIF"/>
+                                        <connections>
+                                            <action selector="didTapMakeGIF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TyU-cb-Vji"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.62309093049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="FHg-0G-OwV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sZS-9j-JkO" secondAttribute="trailing" constant="15" id="1Mm-an-UMY"/>
                                     <constraint firstAttribute="trailing" secondItem="DWX-lP-lmb" secondAttribute="trailing" constant="15" id="1f8-vA-3hk"/>
                                     <constraint firstItem="YA3-ZJ-VKY" firstAttribute="top" secondItem="sZS-9j-JkO" secondAttribute="bottom" id="2gq-Tk-PJe"/>
-                                    <constraint firstAttribute="bottom" secondItem="cvr-xm-eGS" secondAttribute="bottom" constant="15" id="4Wr-fh-qWh"/>
-                                    <constraint firstAttribute="trailing" secondItem="cvr-xm-eGS" secondAttribute="trailing" constant="15" id="6BS-bj-uqV"/>
                                     <constraint firstItem="YA3-ZJ-VKY" firstAttribute="top" secondItem="FHg-0G-OwV" secondAttribute="bottom" id="6a4-4X-VrL"/>
                                     <constraint firstItem="BDC-Di-eal" firstAttribute="top" secondItem="YA3-ZJ-VKY" secondAttribute="bottom" constant="30" id="79y-hx-iW3"/>
+                                    <constraint firstItem="DQX-cG-VTV" firstAttribute="top" secondItem="BDC-Di-eal" secondAttribute="bottom" constant="15" id="7cP-gA-TWQ"/>
                                     <constraint firstItem="Uqq-aO-Slz" firstAttribute="leading" secondItem="HsO-tp-3bP" secondAttribute="leading" constant="15" id="9jZ-NO-7JU"/>
                                     <constraint firstAttribute="trailing" secondItem="YA3-ZJ-VKY" secondAttribute="trailing" constant="15" id="BK0-lx-KSA"/>
                                     <constraint firstItem="BDC-Di-eal" firstAttribute="leading" secondItem="HsO-tp-3bP" secondAttribute="leading" constant="15" id="Cng-Iv-ij9"/>
-                                    <constraint firstAttribute="trailing" secondItem="Uqq-aO-Slz" secondAttribute="trailing" constant="15" id="Dhi-lx-SW0"/>
                                     <constraint firstItem="sZS-9j-JkO" firstAttribute="leading" secondItem="HsO-tp-3bP" secondAttribute="leading" constant="15" id="DqA-kd-hB7"/>
-                                    <constraint firstItem="cvr-xm-eGS" firstAttribute="top" secondItem="5Iq-Hy-DR3" secondAttribute="bottom" constant="15" id="EXz-JI-kea"/>
                                     <constraint firstItem="YA3-ZJ-VKY" firstAttribute="top" secondItem="HsO-tp-3bP" secondAttribute="top" constant="35" id="Elv-Qz-zTX"/>
                                     <constraint firstItem="BDC-Di-eal" firstAttribute="top" secondItem="DWX-lP-lmb" secondAttribute="bottom" id="FrM-zm-NZL"/>
                                     <constraint firstAttribute="trailing" secondItem="BDC-Di-eal" secondAttribute="trailing" constant="15" id="GrW-X3-fhB"/>
+                                    <constraint firstAttribute="trailing" secondItem="DQX-cG-VTV" secondAttribute="trailing" constant="15" id="MW3-OC-pv5"/>
                                     <constraint firstItem="Uqq-aO-Slz" firstAttribute="top" secondItem="BDC-Di-eal" secondAttribute="bottom" constant="15" id="MZ9-bt-fB0"/>
                                     <constraint firstItem="YA3-ZJ-VKY" firstAttribute="leading" secondItem="HsO-tp-3bP" secondAttribute="leading" constant="15" id="ObO-Gi-evQ"/>
                                     <constraint firstItem="DWX-lP-lmb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HsO-tp-3bP" secondAttribute="leading" constant="15" id="Yd8-vs-qC0"/>
                                     <constraint firstAttribute="trailing" secondItem="FHg-0G-OwV" secondAttribute="trailing" constant="15" id="bNI-qc-rvM"/>
-                                    <constraint firstItem="5Iq-Hy-DR3" firstAttribute="leading" secondItem="HsO-tp-3bP" secondAttribute="leading" constant="15" id="bxR-hb-OdG"/>
-                                    <constraint firstAttribute="trailing" secondItem="5Iq-Hy-DR3" secondAttribute="trailing" constant="15" id="e9J-86-3wy"/>
+                                    <constraint firstItem="DQX-cG-VTV" firstAttribute="leading" secondItem="Uqq-aO-Slz" secondAttribute="trailing" constant="15" id="g91-wP-rQ2"/>
                                     <constraint firstItem="BDC-Di-eal" firstAttribute="top" secondItem="Hhq-Zk-eQV" secondAttribute="bottom" id="gEQ-pe-sWe"/>
-                                    <constraint firstItem="5Iq-Hy-DR3" firstAttribute="top" secondItem="Uqq-aO-Slz" secondAttribute="bottom" constant="15" id="jQ6-kR-Ga0"/>
                                     <constraint firstItem="Hhq-Zk-eQV" firstAttribute="leading" secondItem="HsO-tp-3bP" secondAttribute="leading" constant="15" id="rCB-Vx-jWk"/>
-                                    <constraint firstItem="cvr-xm-eGS" firstAttribute="leading" secondItem="HsO-tp-3bP" secondAttribute="leading" constant="15" id="s2m-E0-65L"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uqq-aO-Slz" secondAttribute="bottom" constant="15" id="tRx-cw-m9K"/>
+                                    <constraint firstItem="DQX-cG-VTV" firstAttribute="width" secondItem="Uqq-aO-Slz" secondAttribute="width" id="v7y-Ul-55w"/>
+                                    <constraint firstAttribute="bottom" secondItem="DQX-cG-VTV" secondAttribute="bottom" constant="15" id="zmg-SM-igN"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -144,7 +131,6 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="480"/>
                     <connections>
-                        <outlet property="actionsContainer" destination="HsO-tp-3bP" id="3oV-Vc-VUb"/>
                         <outlet property="durationInSecondsLabel" destination="DWX-lP-lmb" id="rJV-HB-jDl"/>
                         <outlet property="durationInSecondsSlider" destination="BDC-Di-eal" id="JAK-9e-8y6"/>
                         <outlet property="numberOfImagesLabel" destination="FHg-0G-OwV" id="n5e-dv-zbP"/>
