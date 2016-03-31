@@ -10,17 +10,17 @@ TBD
 
 Check out the [NSOperation](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/NSOperation_class/) subclasses. See them used in the example app in this repo. Briefly, here's what they can do:
 
-1. GIFOperation: creates a GIF of a specified duration from an array of images
+1. **GIFOperation:** creates a GIF of a specified duration from an array of images
 
-2. CompositionOperation: Creates an [AVMutableComposition](https://developer.apple.com/library/mac/documentation/AVFoundation/Reference/AVMutableComposition_Class/) from an array of [AVAssets](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/)
+2. **CompositionOperation:** Creates an [AVMutableComposition](https://developer.apple.com/library/mac/documentation/AVFoundation/Reference/AVMutableComposition_Class/) from an array of [AVAssets](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/)
 
-3. ImageExtractionOperation: Extracts a set of images at specific [CMTimes](https://developer.apple.com/library/mac/documentation/CoreMedia/Reference/CMTime/) from an [AVComposition](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVComposition_Class/index.html)
+3. **ImageExtractionOperation:** Extracts a set of images at specific [CMTimes](https://developer.apple.com/library/mac/documentation/CoreMedia/Reference/CMTime/) from an [AVComposition](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVComposition_Class/index.html)
 
-4. ImageConcatenationOperation: Concatenates an array of images into a GIF-like video of a specified duration
+4. **ImageConcatenationOperation:** Concatenates an array of images into a GIF-like video of a specified duration
 
-5. VideoGIFFromVideoOperation: Uses the above operations to create a GIF-like video given an [AVAsset](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/) (to extract the images from), a number of images to extract, and a duration for the final output 
+5. **VideoGIFFromVideoOperation:** Uses the above operations to create a GIF-like video given an [AVAsset](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/) (to extract the images from), a number of images to extract, and a duration for the final output 
 
-6. GIFFromVideoOperation: Uses the above operations to create a GIF given an [AVAsset](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/) (to extract the images from), a number of images to extract, and a duration for the final output 
+6. **GIFFromVideoOperation:** Uses the above operations to create a GIF given an [AVAsset](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/) (to extract the images from), a number of images to extract, and a duration for the final output 
 
 ## TODO
 
