@@ -20,7 +20,7 @@ end
 
 ###Framework
 
-`git clone git@github.com:alfiehanssen/GIFSet.git`, open the workspace, build the GIFSet scheme, and add the resulting `GIFSet.framework` to your project.
+`git clone git@github.com:alfiehanssen/GIFSet.git`, open the workspace, build the GIFSet scheme, and add the resulting GIFSet.framework to your project.
 
 ## Usage
 
