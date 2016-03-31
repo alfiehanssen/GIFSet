@@ -1,6 +1,6 @@
 # GIFSet
 
-GIFSet is a simple toolset for creating GIFs and GIF-like videos. 
+GIFSet is a simple toolset for creating GIFs and GIF-like videos. Check out a quick demo video [here](https://youtu.be/pVTasefaq3Q).
 
 ## Setup
 
@@ -37,8 +37,6 @@ Check out the [NSOperation](https://developer.apple.com/library/mac/documentatio
 5. **VideoGIFFromVideoOperation:** Uses the above operations to create a GIF-like video given an [AVAsset](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/) (to extract the images from), a number of images to extract, and a duration for the final output 
 
 6. **GIFFromVideoOperation:** Uses the above operations to create a GIF given an [AVAsset](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/) (to extract the images from), a number of images to extract, and a duration for the final output 
-
-[![A short demo video](https://i.ytimg.com/vi/pVTasefaq3Q/1.jpg?time=1459392102795)](https://youtu.be/pVTasefaq3Q)
 
 ## TODO
 
