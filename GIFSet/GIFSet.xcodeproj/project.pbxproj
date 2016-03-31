@@ -10,27 +10,27 @@
 		AF871F281CA2F443004C752C /* GIFSet.h in Headers */ = {isa = PBXBuildFile; fileRef = AF871F271CA2F443004C752C /* GIFSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF871F2F1CA2F443004C752C /* GIFSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF871F241CA2F443004C752C /* GIFSet.framework */; };
 		AF871F341CA2F443004C752C /* GIFSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF871F331CA2F443004C752C /* GIFSetTests.m */; };
-		AF871F691CA2F4F8004C752C /* BlockTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AF871F511CA2F4F8004C752C /* BlockTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF871F6C1CA2F4F8004C752C /* ConcurrentOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF871F551CA2F4F8004C752C /* ConcurrentOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF871F6D1CA2F4F8004C752C /* ConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF871F561CA2F4F8004C752C /* ConcurrentOperation.m */; };
-		AF871F6E1CA2F4F8004C752C /* GIFOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF871F571CA2F4F8004C752C /* GIFOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF871F6F1CA2F4F8004C752C /* GIFOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF871F581CA2F4F8004C752C /* GIFOperation.m */; };
-		AF871F701CA2F4F8004C752C /* ImageConcatenationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF871F591CA2F4F8004C752C /* ImageConcatenationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF871F711CA2F4F8004C752C /* ImageConcatenationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF871F5A1CA2F4F8004C752C /* ImageConcatenationOperation.m */; };
-		AF871F721CA2F4F8004C752C /* ImageExtractionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF871F5B1CA2F4F8004C752C /* ImageExtractionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF871F731CA2F4F8004C752C /* ImageExtractionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF871F5C1CA2F4F8004C752C /* ImageExtractionOperation.m */; };
-		AF871F781CA43226004C752C /* NSURL+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF871F761CA43226004C752C /* NSURL+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF871F791CA43226004C752C /* NSURL+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF871F771CA43226004C752C /* NSURL+Extensions.m */; };
-		AF8720691CA45879004C752C /* CompositionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8720671CA45879004C752C /* CompositionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF87206A1CA45879004C752C /* CompositionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720681CA45879004C752C /* CompositionOperation.m */; };
-		AF87206D1CA57A81004C752C /* AVAsset+Times.h in Headers */ = {isa = PBXBuildFile; fileRef = AF87206B1CA57A81004C752C /* AVAsset+Times.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF87206E1CA57A81004C752C /* AVAsset+Times.m in Sources */ = {isa = PBXBuildFile; fileRef = AF87206C1CA57A81004C752C /* AVAsset+Times.m */; };
-		AF8720731CA6C17D004C752C /* VideoGIFFromVideoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8720711CA6C17D004C752C /* VideoGIFFromVideoOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF8720741CA6C17D004C752C /* VideoGIFFromVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720721CA6C17D004C752C /* VideoGIFFromVideoOperation.m */; };
-		AF8720791CA78515004C752C /* NSFileManager+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8720771CA78515004C752C /* NSFileManager+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF87207A1CA78515004C752C /* NSFileManager+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720781CA78515004C752C /* NSFileManager+Extensions.m */; };
-		AF8720871CA850E7004C752C /* GIFFromVideoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8720851CA850E7004C752C /* GIFFromVideoOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF8720881CA850E7004C752C /* GIFFromVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8720861CA850E7004C752C /* GIFFromVideoOperation.m */; };
+		AF87213D1CACBD5A004C752C /* AVAsset+Times.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8721261CACBD5A004C752C /* AVAsset+Times.h */; };
+		AF87213E1CACBD5A004C752C /* AVAsset+Times.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8721271CACBD5A004C752C /* AVAsset+Times.m */; };
+		AF87213F1CACBD5A004C752C /* NSFileManager+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8721281CACBD5A004C752C /* NSFileManager+Extensions.h */; };
+		AF8721401CACBD5A004C752C /* NSFileManager+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8721291CACBD5A004C752C /* NSFileManager+Extensions.m */; };
+		AF8721411CACBD5A004C752C /* NSURL+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF87212A1CACBD5A004C752C /* NSURL+Extensions.h */; };
+		AF8721421CACBD5A004C752C /* NSURL+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF87212B1CACBD5A004C752C /* NSURL+Extensions.m */; };
+		AF8721431CACBD5A004C752C /* BlockTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AF87212D1CACBD5A004C752C /* BlockTypes.h */; };
+		AF8721441CACBD5A004C752C /* CompositionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF87212F1CACBD5A004C752C /* CompositionOperation.h */; };
+		AF8721451CACBD5A004C752C /* CompositionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8721301CACBD5A004C752C /* CompositionOperation.m */; };
+		AF8721461CACBD5A004C752C /* ConcurrentOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8721311CACBD5A004C752C /* ConcurrentOperation.h */; };
+		AF8721471CACBD5A004C752C /* ConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8721321CACBD5A004C752C /* ConcurrentOperation.m */; };
+		AF8721481CACBD5A004C752C /* GIFFromVideoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8721331CACBD5A004C752C /* GIFFromVideoOperation.h */; };
+		AF8721491CACBD5A004C752C /* GIFFromVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8721341CACBD5A004C752C /* GIFFromVideoOperation.m */; };
+		AF87214A1CACBD5A004C752C /* GIFOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8721351CACBD5A004C752C /* GIFOperation.h */; };
+		AF87214B1CACBD5A004C752C /* GIFOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8721361CACBD5A004C752C /* GIFOperation.m */; };
+		AF87214C1CACBD5A004C752C /* ImageConcatenationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8721371CACBD5A004C752C /* ImageConcatenationOperation.h */; };
+		AF87214D1CACBD5A004C752C /* ImageConcatenationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8721381CACBD5A004C752C /* ImageConcatenationOperation.m */; };
+		AF87214E1CACBD5A004C752C /* ImageExtractionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8721391CACBD5A004C752C /* ImageExtractionOperation.h */; };
+		AF87214F1CACBD5A004C752C /* ImageExtractionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF87213A1CACBD5A004C752C /* ImageExtractionOperation.m */; };
+		AF8721501CACBD5A004C752C /* VideoGIFFromVideoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF87213B1CACBD5A004C752C /* VideoGIFFromVideoOperation.h */; };
+		AF8721511CACBD5A004C752C /* VideoGIFFromVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF87213C1CACBD5A004C752C /* VideoGIFFromVideoOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,27 +50,27 @@
 		AF871F2E1CA2F443004C752C /* GIFSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF871F331CA2F443004C752C /* GIFSetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFSetTests.m; sourceTree = "<group>"; };
 		AF871F351CA2F443004C752C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF871F511CA2F4F8004C752C /* BlockTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTypes.h; sourceTree = "<group>"; };
-		AF871F551CA2F4F8004C752C /* ConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcurrentOperation.h; sourceTree = "<group>"; };
-		AF871F561CA2F4F8004C752C /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcurrentOperation.m; sourceTree = "<group>"; };
-		AF871F571CA2F4F8004C752C /* GIFOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFOperation.h; sourceTree = "<group>"; };
-		AF871F581CA2F4F8004C752C /* GIFOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFOperation.m; sourceTree = "<group>"; };
-		AF871F591CA2F4F8004C752C /* ImageConcatenationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageConcatenationOperation.h; sourceTree = "<group>"; };
-		AF871F5A1CA2F4F8004C752C /* ImageConcatenationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageConcatenationOperation.m; sourceTree = "<group>"; };
-		AF871F5B1CA2F4F8004C752C /* ImageExtractionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageExtractionOperation.h; sourceTree = "<group>"; };
-		AF871F5C1CA2F4F8004C752C /* ImageExtractionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageExtractionOperation.m; sourceTree = "<group>"; };
-		AF871F761CA43226004C752C /* NSURL+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Extensions.h"; sourceTree = "<group>"; };
-		AF871F771CA43226004C752C /* NSURL+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Extensions.m"; sourceTree = "<group>"; };
-		AF8720671CA45879004C752C /* CompositionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositionOperation.h; sourceTree = "<group>"; };
-		AF8720681CA45879004C752C /* CompositionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositionOperation.m; sourceTree = "<group>"; };
-		AF87206B1CA57A81004C752C /* AVAsset+Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAsset+Times.h"; sourceTree = "<group>"; };
-		AF87206C1CA57A81004C752C /* AVAsset+Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAsset+Times.m"; sourceTree = "<group>"; };
-		AF8720711CA6C17D004C752C /* VideoGIFFromVideoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoGIFFromVideoOperation.h; sourceTree = "<group>"; };
-		AF8720721CA6C17D004C752C /* VideoGIFFromVideoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoGIFFromVideoOperation.m; sourceTree = "<group>"; };
-		AF8720771CA78515004C752C /* NSFileManager+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extensions.h"; sourceTree = "<group>"; };
-		AF8720781CA78515004C752C /* NSFileManager+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extensions.m"; sourceTree = "<group>"; };
-		AF8720851CA850E7004C752C /* GIFFromVideoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFromVideoOperation.h; sourceTree = "<group>"; };
-		AF8720861CA850E7004C752C /* GIFFromVideoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFFromVideoOperation.m; sourceTree = "<group>"; };
+		AF8721261CACBD5A004C752C /* AVAsset+Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAsset+Times.h"; sourceTree = "<group>"; };
+		AF8721271CACBD5A004C752C /* AVAsset+Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAsset+Times.m"; sourceTree = "<group>"; };
+		AF8721281CACBD5A004C752C /* NSFileManager+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extensions.h"; sourceTree = "<group>"; };
+		AF8721291CACBD5A004C752C /* NSFileManager+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extensions.m"; sourceTree = "<group>"; };
+		AF87212A1CACBD5A004C752C /* NSURL+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Extensions.h"; sourceTree = "<group>"; };
+		AF87212B1CACBD5A004C752C /* NSURL+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Extensions.m"; sourceTree = "<group>"; };
+		AF87212D1CACBD5A004C752C /* BlockTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTypes.h; sourceTree = "<group>"; };
+		AF87212F1CACBD5A004C752C /* CompositionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositionOperation.h; sourceTree = "<group>"; };
+		AF8721301CACBD5A004C752C /* CompositionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositionOperation.m; sourceTree = "<group>"; };
+		AF8721311CACBD5A004C752C /* ConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcurrentOperation.h; sourceTree = "<group>"; };
+		AF8721321CACBD5A004C752C /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcurrentOperation.m; sourceTree = "<group>"; };
+		AF8721331CACBD5A004C752C /* GIFFromVideoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFromVideoOperation.h; sourceTree = "<group>"; };
+		AF8721341CACBD5A004C752C /* GIFFromVideoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFFromVideoOperation.m; sourceTree = "<group>"; };
+		AF8721351CACBD5A004C752C /* GIFOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFOperation.h; sourceTree = "<group>"; };
+		AF8721361CACBD5A004C752C /* GIFOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFOperation.m; sourceTree = "<group>"; };
+		AF8721371CACBD5A004C752C /* ImageConcatenationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageConcatenationOperation.h; sourceTree = "<group>"; };
+		AF8721381CACBD5A004C752C /* ImageConcatenationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageConcatenationOperation.m; sourceTree = "<group>"; };
+		AF8721391CACBD5A004C752C /* ImageExtractionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageExtractionOperation.h; sourceTree = "<group>"; };
+		AF87213A1CACBD5A004C752C /* ImageExtractionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageExtractionOperation.m; sourceTree = "<group>"; };
+		AF87213B1CACBD5A004C752C /* VideoGIFFromVideoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoGIFFromVideoOperation.h; sourceTree = "<group>"; };
+		AF87213C1CACBD5A004C752C /* VideoGIFFromVideoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoGIFFromVideoOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 			children = (
 				AF871F271CA2F443004C752C /* GIFSet.h */,
 				AF871F291CA2F443004C752C /* Info.plist */,
-				AF871F421CA2F4F8004C752C /* GIFSet-Source */,
+				AF8721241CACBD5A004C752C /* Source */,
 			);
 			path = GIFSet;
 			sourceTree = "<group>";
@@ -129,57 +129,56 @@
 			path = GIFSetTests;
 			sourceTree = "<group>";
 		};
-		AF871F421CA2F4F8004C752C /* GIFSet-Source */ = {
+		AF8721241CACBD5A004C752C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				AF871F751CA43226004C752C /* Categories */,
-				AF871F501CA2F4F8004C752C /* Model */,
-				AF871F541CA2F4F8004C752C /* Operations */,
+				AF8721251CACBD5A004C752C /* Categories */,
+				AF87212C1CACBD5A004C752C /* Model */,
+				AF87212E1CACBD5A004C752C /* Operations */,
 			);
-			name = "GIFSet-Source";
-			path = "../../GIFSet-Source";
+			path = Source;
 			sourceTree = "<group>";
 		};
-		AF871F501CA2F4F8004C752C /* Model */ = {
+		AF8721251CACBD5A004C752C /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				AF871F511CA2F4F8004C752C /* BlockTypes.h */,
+				AF8721261CACBD5A004C752C /* AVAsset+Times.h */,
+				AF8721271CACBD5A004C752C /* AVAsset+Times.m */,
+				AF8721281CACBD5A004C752C /* NSFileManager+Extensions.h */,
+				AF8721291CACBD5A004C752C /* NSFileManager+Extensions.m */,
+				AF87212A1CACBD5A004C752C /* NSURL+Extensions.h */,
+				AF87212B1CACBD5A004C752C /* NSURL+Extensions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AF87212C1CACBD5A004C752C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF87212D1CACBD5A004C752C /* BlockTypes.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		AF871F541CA2F4F8004C752C /* Operations */ = {
+		AF87212E1CACBD5A004C752C /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				AF871F551CA2F4F8004C752C /* ConcurrentOperation.h */,
-				AF871F561CA2F4F8004C752C /* ConcurrentOperation.m */,
-				AF871F571CA2F4F8004C752C /* GIFOperation.h */,
-				AF871F581CA2F4F8004C752C /* GIFOperation.m */,
-				AF8720671CA45879004C752C /* CompositionOperation.h */,
-				AF8720681CA45879004C752C /* CompositionOperation.m */,
-				AF871F5B1CA2F4F8004C752C /* ImageExtractionOperation.h */,
-				AF871F5C1CA2F4F8004C752C /* ImageExtractionOperation.m */,
-				AF871F591CA2F4F8004C752C /* ImageConcatenationOperation.h */,
-				AF871F5A1CA2F4F8004C752C /* ImageConcatenationOperation.m */,
-				AF8720711CA6C17D004C752C /* VideoGIFFromVideoOperation.h */,
-				AF8720721CA6C17D004C752C /* VideoGIFFromVideoOperation.m */,
-				AF8720851CA850E7004C752C /* GIFFromVideoOperation.h */,
-				AF8720861CA850E7004C752C /* GIFFromVideoOperation.m */,
+				AF87212F1CACBD5A004C752C /* CompositionOperation.h */,
+				AF8721301CACBD5A004C752C /* CompositionOperation.m */,
+				AF8721311CACBD5A004C752C /* ConcurrentOperation.h */,
+				AF8721321CACBD5A004C752C /* ConcurrentOperation.m */,
+				AF8721331CACBD5A004C752C /* GIFFromVideoOperation.h */,
+				AF8721341CACBD5A004C752C /* GIFFromVideoOperation.m */,
+				AF8721351CACBD5A004C752C /* GIFOperation.h */,
+				AF8721361CACBD5A004C752C /* GIFOperation.m */,
+				AF8721371CACBD5A004C752C /* ImageConcatenationOperation.h */,
+				AF8721381CACBD5A004C752C /* ImageConcatenationOperation.m */,
+				AF8721391CACBD5A004C752C /* ImageExtractionOperation.h */,
+				AF87213A1CACBD5A004C752C /* ImageExtractionOperation.m */,
+				AF87213B1CACBD5A004C752C /* VideoGIFFromVideoOperation.h */,
+				AF87213C1CACBD5A004C752C /* VideoGIFFromVideoOperation.m */,
 			);
 			path = Operations;
-			sourceTree = "<group>";
-		};
-		AF871F751CA43226004C752C /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				AF871F761CA43226004C752C /* NSURL+Extensions.h */,
-				AF871F771CA43226004C752C /* NSURL+Extensions.m */,
-				AF87206B1CA57A81004C752C /* AVAsset+Times.h */,
-				AF87206C1CA57A81004C752C /* AVAsset+Times.m */,
-				AF8720771CA78515004C752C /* NSFileManager+Extensions.h */,
-				AF8720781CA78515004C752C /* NSFileManager+Extensions.m */,
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,18 +188,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF871F781CA43226004C752C /* NSURL+Extensions.h in Headers */,
-				AF8720791CA78515004C752C /* NSFileManager+Extensions.h in Headers */,
-				AF8720691CA45879004C752C /* CompositionOperation.h in Headers */,
-				AF8720871CA850E7004C752C /* GIFFromVideoOperation.h in Headers */,
-				AF871F721CA2F4F8004C752C /* ImageExtractionOperation.h in Headers */,
-				AF871F691CA2F4F8004C752C /* BlockTypes.h in Headers */,
 				AF871F281CA2F443004C752C /* GIFSet.h in Headers */,
-				AF871F6E1CA2F4F8004C752C /* GIFOperation.h in Headers */,
-				AF871F6C1CA2F4F8004C752C /* ConcurrentOperation.h in Headers */,
-				AF871F701CA2F4F8004C752C /* ImageConcatenationOperation.h in Headers */,
-				AF87206D1CA57A81004C752C /* AVAsset+Times.h in Headers */,
-				AF8720731CA6C17D004C752C /* VideoGIFFromVideoOperation.h in Headers */,
+				AF8721431CACBD5A004C752C /* BlockTypes.h in Headers */,
+				AF8721461CACBD5A004C752C /* ConcurrentOperation.h in Headers */,
+				AF87213F1CACBD5A004C752C /* NSFileManager+Extensions.h in Headers */,
+				AF87214E1CACBD5A004C752C /* ImageExtractionOperation.h in Headers */,
+				AF87213D1CACBD5A004C752C /* AVAsset+Times.h in Headers */,
+				AF8721411CACBD5A004C752C /* NSURL+Extensions.h in Headers */,
+				AF8721441CACBD5A004C752C /* CompositionOperation.h in Headers */,
+				AF87214A1CACBD5A004C752C /* GIFOperation.h in Headers */,
+				AF8721481CACBD5A004C752C /* GIFFromVideoOperation.h in Headers */,
+				AF87214C1CACBD5A004C752C /* ImageConcatenationOperation.h in Headers */,
+				AF8721501CACBD5A004C752C /* VideoGIFFromVideoOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,16 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF87206A1CA45879004C752C /* CompositionOperation.m in Sources */,
-				AF871F791CA43226004C752C /* NSURL+Extensions.m in Sources */,
-				AF871F711CA2F4F8004C752C /* ImageConcatenationOperation.m in Sources */,
-				AF87207A1CA78515004C752C /* NSFileManager+Extensions.m in Sources */,
-				AF871F6D1CA2F4F8004C752C /* ConcurrentOperation.m in Sources */,
-				AF8720741CA6C17D004C752C /* VideoGIFFromVideoOperation.m in Sources */,
-				AF87206E1CA57A81004C752C /* AVAsset+Times.m in Sources */,
-				AF871F6F1CA2F4F8004C752C /* GIFOperation.m in Sources */,
-				AF8720881CA850E7004C752C /* GIFFromVideoOperation.m in Sources */,
-				AF871F731CA2F4F8004C752C /* ImageExtractionOperation.m in Sources */,
+				AF8721491CACBD5A004C752C /* GIFFromVideoOperation.m in Sources */,
+				AF87214B1CACBD5A004C752C /* GIFOperation.m in Sources */,
+				AF87214D1CACBD5A004C752C /* ImageConcatenationOperation.m in Sources */,
+				AF8721471CACBD5A004C752C /* ConcurrentOperation.m in Sources */,
+				AF87214F1CACBD5A004C752C /* ImageExtractionOperation.m in Sources */,
+				AF8721401CACBD5A004C752C /* NSFileManager+Extensions.m in Sources */,
+				AF8721511CACBD5A004C752C /* VideoGIFFromVideoOperation.m in Sources */,
+				AF8721421CACBD5A004C752C /* NSURL+Extensions.m in Sources */,
+				AF8721451CACBD5A004C752C /* CompositionOperation.m in Sources */,
+				AF87213E1CACBD5A004C752C /* AVAsset+Times.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

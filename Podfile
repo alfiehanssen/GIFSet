@@ -1,4 +1,4 @@
-xcodeproj './GIFSet-Example/GIFSet-Example.xcodeproj/'
+xcodeproj './Example/GIFSet-Example.xcodeproj/'
 
 # Uncomment this line to define a global platform for your project
 platform :ios, '9.0'

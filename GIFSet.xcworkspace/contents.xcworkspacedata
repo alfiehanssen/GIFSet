@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GIFSet-Framework/GIFSet.xcodeproj">
+      location = "group:GIFSet/GIFSet.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GIFSet-Example/GIFSet-Example.xcodeproj">
+      location = "group:Example/GIFSet-Example.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
