@@ -4,7 +4,23 @@ GIFSet is a simple toolset for creating GIFs and GIF-like videos.
 
 ## Setup
 
-TBD
+###Cocoapods
+
+Add this to your podfile:
+
+```Ruby
+target '{YourTarget}' do
+    pod 'GIFSet', '{LatestVersionNumber}'
+end
+```
+
+###Submodule
+
+`git submodule add git@github.com:alfiehanssen/GIFSet.git` and add the source files to your project/target.
+
+###Framework
+
+`git clone git@github.com:alfiehanssen/GIFSet.git`, open the workspace, build the GIFSet scheme, and add the resulting `GIFSet.framework` to your project.
 
 ## Usage
 
