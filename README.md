@@ -4,7 +4,7 @@ GIFSet is a simple toolset for creating GIFs and GIF-like videos.
 
 ## Setup
 
-###Cocoapods
+###Cocoapod
 
 Add this to your podfile:
 
