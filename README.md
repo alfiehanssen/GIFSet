@@ -38,7 +38,7 @@ Check out the [NSOperation](https://developer.apple.com/library/mac/documentatio
 
 6. **GIFFromVideoOperation:** Uses the above operations to create a GIF given an [AVAsset](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAsset_Class/) (to extract the images from), a number of images to extract, and a duration for the final output 
 
-[![A short demo video](http://img.youtube.com/vi/T-D1KVIuvjA/0.jpg)](https://youtu.be/pVTasefaq3Q)
+[![A short demo video](https://i.ytimg.com/vi/pVTasefaq3Q/1.jpg?time=1459392102795)](https://youtu.be/pVTasefaq3Q)
 
 ## TODO
 
