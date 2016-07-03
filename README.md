@@ -1,6 +1,9 @@
 # GIFSet
 
-GIFSet is a simple toolset for creating GIFs and GIF-like videos. Check out a quick demo video [here](https://youtu.be/pVTasefaq3Q).
+GIFSet is a simple toolset for creating GIFs and GIF-like videos. 
+
+There are two short demo videos [here on YouTube](https://youtu.be/pVTasefaq3Q) and [here on Vimeo](https://vimeo.com/173255845/e4993196a0).
+
 
 ## Setup
 
