@@ -2,7 +2,7 @@
 
 GIFSet is a simple toolset for creating GIFs and GIF-like videos. 
 
-There are two short demo videos [here on YouTube](https://youtu.be/pVTasefaq3Q) and [here on Vimeo](https://vimeo.com/173255845/e4993196a0).
+There are two short demo videos [here on YouTube](https://youtu.be/pVTasefaq3Q) and [here on Vimeo](https://vimeo.com/173255845/e4993196a0) (the Vimeo demo has some cool UI in the mix, if you watch one demo, watch the Vimeo demo).
 
 <img src="https://cloud.githubusercontent.com/assets/991059/16546243/08f77946-4112-11e6-9282-54ac8214bac6.gif" width="200">
 
